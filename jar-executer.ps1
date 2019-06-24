@@ -1,2 +1,3 @@
-echo "exho of jar-executer - 1"
-echo "exho of jar-executer - 2"
+param([string]$url)
+Start-BitsTransfer -Source $url -Destination './jar.jar'
+java -jar ./jar.jar
